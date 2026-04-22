@@ -1,4 +1,11 @@
 # Docker
+- task: KubernetesManifest@1
+  inputs:
+    action: 'deploy'
+    connectionType: 'azureResourceManager'
+    azureResourceGroup: 'iciciproject'
+    kubernetesCluster: 'iciciproject'
+    namespace: 'default'
 # Build and push an image to Azure Container Registry
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
