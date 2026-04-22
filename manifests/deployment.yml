@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sanjaydahiyaiciciproject 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sanjaydahiyaiciciproject
+  template:
+    metadata:
+      labels:
+        app: sanjaydahiyaiciciproject 
+    spec:
+      containers:
+        - name: sanjaydahiyaiciciproject 
+          image: iciciprojects.azurecr.io/sanjaydahiyaiciciproject
+          ports:
+          - containerPort: 80
