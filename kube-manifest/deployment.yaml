@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app1-nginx
-          image: sanjaydahiya2040.azurecr.io/sanjaydahiyasanjaydahiya:24
+          image:  iciciprojects.azurecr.io/sanjaydahiyaiciciproject:27
           ports:
             - containerPort: 80
 ---
